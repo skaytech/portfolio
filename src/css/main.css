@@ -231,6 +231,7 @@ Navbar
   align-items: center;
 }
 .nav-header img {
+  height: 4rem;
   margin-bottom: 0.375rem;
 }
 .toggle-btn {
@@ -280,6 +281,19 @@ Navbar
 @media screen and (min-width: 992px) {
   .navbar {
     background: transparent;
+  }
+}
+/*
+-- Media Queries for the Logo --
+*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .nav-header img {
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 499px) {
+  .nav-header img {
+    height: 2.8rem;
   }
 }
 /*

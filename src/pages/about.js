@@ -10,7 +10,14 @@ const About = ({
     allStrapiAbout: { nodes },
   },
 }) => {
-  const { title, description, stack, image } = nodes[0]
+  const {
+    title,
+    description1,
+    description2,
+    description3,
+    stack,
+    image,
+  } = nodes[0]
   return (
     <Layout>
       <SEO title="About Me" description="This is the about page" />
@@ -19,7 +26,9 @@ const About = ({
           <Image fluid={image.childImageSharp.fluid} className="about-img" />
           <article className="about-text">
             <Title title={title} />
-            <p>{description}</p>
+            <p>{description1}</p>
+            <p>{description2}</p>
+            <p>{description3}</p>
             <div className="about-stack">
               {stack.map(item => {
                 return <span key={item.id}>{item.name}</span>
@@ -37,7 +46,9 @@ export const query = graphql`
     allStrapiAbout {
       nodes {
         title
-        description
+        description1
+        description2
+        description3
         id
         image {
           childImageSharp {
