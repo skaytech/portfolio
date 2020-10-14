@@ -6,7 +6,7 @@ const Footer = () => {
       <div>
         <SocialLinks styleClass="footer-links"></SocialLinks>
         <h4>
-          &copy; <span>Skay</span> {new Date().getFullYear()}
+          &copy; <span>Skay Tech</span> {new Date().getFullYear()}
         </h4>
       </div>
     </footer>

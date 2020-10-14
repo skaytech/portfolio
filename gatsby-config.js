@@ -8,11 +8,11 @@ module.exports = {
   siteMetadata: {
     title: "Karthik's Portfolio",
     description:
-      "Hi, I'm Skay. My full name is Karthik Shivkumar & I'm a full-stack engineer and an avid techical blogger. I specialize in web development with technologies such as ReactJS, Java Spring, PostgreSQL, Docker, etc.",
+      "Hi, I'm Skay also know as Karthik. I'm a full-stack engineer & a technical product manager. I specialize in web development with technologies such as ReactJS, Java Spring Boot, PostgreSQL, Docker & AWS",
     author: "@skay",
     twitterUsername: "@skay_tech",
-    image: "/twitter-img.png",
-    siteUrl: "https://www.skay.dev",
+    image: "/social-img.png",
+    siteUrl: "https://skay.dev",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -47,6 +47,12 @@ module.exports = {
             family: `Open Sans`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/assets/logo.png`,
       },
     },
   ],
