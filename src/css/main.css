@@ -1057,16 +1057,27 @@ Blog Template
 .blog-template h2 {
   padding-top: 1rem;
 }
+.blog-template p {
+  margin: 0.5rem 0;
+  color: var(--clr-grey-3);
+}
 .blog-template ul {
-  margin-top: 2rem;
+  margin: 0.5rem;
   display: inline-block;
 }
+.blog-template ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+  width: 0.375em;
+  height: 0.375em;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25em;
+}
 .blog-template ul li {
-  background: var(--clr-grey-9);
-  color: var(--clr-grey-5);
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  text-transform: uppercase;
+  position: relative;
+  padding-left: 1.75em;
 }
 
 .blog-template ol li {
@@ -1088,6 +1099,7 @@ Blog Template
   overflow-x: scroll;
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
+  margin-bottom: 0.7rem;
 }
 .blog-template img {
   max-width: 90%;
